@@ -3,32 +3,44 @@
     {
       "id": 1,
       "text": "Terminar primer modulo de Angular",
-      "day": "Diciembre 31 a las 17:00",
+      "day": "2021-12-31T13:00",
       "reminder": true
     },
     {
       "id": 2,
       "text": "Hacer las compras de fin de año",
-      "day": "Diciembre 29 a las 16:00",
+      "day": "2021-12-31T13:00",
       "reminder": true
     },
     {
       "id": 3,
       "text": "Investigar sobre Bootstrap",
-      "day": "Enero 1 a las 11:00",
+      "day": "2021-12-31T13:00",
       "reminder": true
     },
     {
       "id": 4,
       "text": "Leer mi libro favorito",
-      "day": "Diciembre 31 a las 21:00",
+      "day": "2021-12-31T13:00",
       "reminder": true
     },
     {
       "id": 5,
       "text": "Salir a correr",
-      "day": "Diciembre 29 a las 21:00",
+      "day": "2021-12-31T13:00",
       "reminder": true
+    },
+    {
+      "text": "Terminar la aplicacion CRUD",
+      "day": "2022-01-30T20:00",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "Bañarme",
+      "day": "2022-01-01T19:00",
+      "reminder": true,
+      "id": 7
     }
   ]
 }

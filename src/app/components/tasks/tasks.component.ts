@@ -13,6 +13,10 @@ export class TasksComponent implements OnInit {
 
   tasks: Task [] = [];
 
+  vencido: boolean = false;
+
+  
+
   constructor(
     private taskService: TaskService
   ) { }
@@ -21,6 +25,8 @@ export class TasksComponent implements OnInit {
     this.taskService.getTasks().subscribe((tasks)=>(
       this.tasks = tasks
     ));
+
+    console.log(this.vencido)
   }
 
   deleteTask(task: Task){
@@ -33,5 +39,16 @@ export class TasksComponent implements OnInit {
     task.reminder = !task.reminder
     this.taskService.updateTaskReminder(task).subscribe()
   }
+
+  addTask(task: Task){
+    this.taskService.addTask(task).subscribe((task) => (
+      this.tasks.push(task)
+    ))
+  }
+
+  
+  
+
+  
 
 }
