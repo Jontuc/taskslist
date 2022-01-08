@@ -37,10 +37,28 @@
       "id": 6
     },
     {
-      "text": "Bañarme",
-      "day": "2022-01-01T19:00",
+      "text": "Estudiar Rxjs",
+      "day": "2022-01-05T19:00",
       "reminder": true,
       "id": 7
+    },
+    {
+      "text": "Curso Data Analitycs",
+      "day": "2022-01-10T16:00",
+      "reminder": true,
+      "id": 8
+    },
+    {
+      "text": "Ver serie en netfix",
+      "day": "2022-01-06T17:35",
+      "reminder": true,
+      "id": 9
+    },
+    {
+      "text": "Hacer portfolio angular",
+      "day": "2022-02-01T17:00",
+      "reminder": true,
+      "id": 10
     }
   ]
 }

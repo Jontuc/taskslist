@@ -3,10 +3,11 @@
     (click)="onToggle(task)"
     >
     <h3>{{task.text}}
+        <div>
         <fa-icon [icon]="faTimes"
         class="red"
         (click) = "onDelete(task)">
-        ></fa-icon> </h3>
+        ></fa-icon></div> </h3>
     <p>{{task.day | date : 'medium'}}</p>
 
 </div>

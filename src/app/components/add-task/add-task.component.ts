@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { UiService } from '../../service/ui.service';
 import { Task } from '../Task';
@@ -30,9 +31,14 @@ export class AddTaskComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){
+  onSubmit(form: NgForm){
     if(this.text.length === 0){
       alert('Llenar la tarea!')
+      return
+    }
+
+    if(this.day.length === 0){
+      alert('Indicar la fecha!')
       return
     }
 
@@ -41,7 +47,7 @@ export class AddTaskComponent implements OnInit {
 
     this.onAddTask.emit(newTask);
   
-    
+    form.reset();
   }
 
 }
