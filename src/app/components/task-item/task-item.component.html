@@ -1,4 +1,4 @@
-<div class="task"
+<div [className]="taskVenc? 'taskv': 'task'"
     [ngClass]="{reminder : task.reminder}"
     (click)="onToggle(task)"
     >
@@ -6,8 +6,12 @@
         <div>
         <fa-icon [icon]="faTimes"
         class="red"
-        (click) = "onDelete(task)">
+        (click) = "onDelete(task)"
         ></fa-icon></div> </h3>
-    <p>{{task.day | date : 'medium'}}</p>
+    <div class="parrafo">
+        <p>{{task.day | date : 'medium'}}</p>
+        <span *ngIf="taskVenc" class="roja">¡Vencida!</span>
+        <span *ngIf="taskAlert" class="aviso">¡Vence pronto!</span>
+    </div>
 
 </div>

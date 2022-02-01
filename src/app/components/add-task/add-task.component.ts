@@ -48,6 +48,8 @@ export class AddTaskComponent implements OnInit {
     this.onAddTask.emit(newTask);
   
     form.reset();
+
+    this.uiService.toggleAddTask();
   }
 
 }
